@@ -1,0 +1,15 @@
+[package]
+name = "minix3rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "minix3"
+path = "src/pre_init.rs"
+crate-type = ["staticlib"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+volatile = "0.2.6"
